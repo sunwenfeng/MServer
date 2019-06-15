@@ -123,6 +123,195 @@ MServer/fast:
 	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/build
 .PHONY : MServer/fast
 
+Acceptor.o: Acceptor.cpp.o
+
+.PHONY : Acceptor.o
+
+# target to build an object file
+Acceptor.cpp.o:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Acceptor.cpp.o
+.PHONY : Acceptor.cpp.o
+
+Acceptor.i: Acceptor.cpp.i
+
+.PHONY : Acceptor.i
+
+# target to preprocess a source file
+Acceptor.cpp.i:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Acceptor.cpp.i
+.PHONY : Acceptor.cpp.i
+
+Acceptor.s: Acceptor.cpp.s
+
+.PHONY : Acceptor.s
+
+# target to generate assembly for a file
+Acceptor.cpp.s:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Acceptor.cpp.s
+.PHONY : Acceptor.cpp.s
+
+Channel.o: Channel.cpp.o
+
+.PHONY : Channel.o
+
+# target to build an object file
+Channel.cpp.o:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Channel.cpp.o
+.PHONY : Channel.cpp.o
+
+Channel.i: Channel.cpp.i
+
+.PHONY : Channel.i
+
+# target to preprocess a source file
+Channel.cpp.i:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Channel.cpp.i
+.PHONY : Channel.cpp.i
+
+Channel.s: Channel.cpp.s
+
+.PHONY : Channel.s
+
+# target to generate assembly for a file
+Channel.cpp.s:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Channel.cpp.s
+.PHONY : Channel.cpp.s
+
+Epoller.o: Epoller.cpp.o
+
+.PHONY : Epoller.o
+
+# target to build an object file
+Epoller.cpp.o:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Epoller.cpp.o
+.PHONY : Epoller.cpp.o
+
+Epoller.i: Epoller.cpp.i
+
+.PHONY : Epoller.i
+
+# target to preprocess a source file
+Epoller.cpp.i:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Epoller.cpp.i
+.PHONY : Epoller.cpp.i
+
+Epoller.s: Epoller.cpp.s
+
+.PHONY : Epoller.s
+
+# target to generate assembly for a file
+Epoller.cpp.s:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Epoller.cpp.s
+.PHONY : Epoller.cpp.s
+
+EventLoop.o: EventLoop.cpp.o
+
+.PHONY : EventLoop.o
+
+# target to build an object file
+EventLoop.cpp.o:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/EventLoop.cpp.o
+.PHONY : EventLoop.cpp.o
+
+EventLoop.i: EventLoop.cpp.i
+
+.PHONY : EventLoop.i
+
+# target to preprocess a source file
+EventLoop.cpp.i:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/EventLoop.cpp.i
+.PHONY : EventLoop.cpp.i
+
+EventLoop.s: EventLoop.cpp.s
+
+.PHONY : EventLoop.s
+
+# target to generate assembly for a file
+EventLoop.cpp.s:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/EventLoop.cpp.s
+.PHONY : EventLoop.cpp.s
+
+Socket.o: Socket.cpp.o
+
+.PHONY : Socket.o
+
+# target to build an object file
+Socket.cpp.o:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Socket.cpp.o
+.PHONY : Socket.cpp.o
+
+Socket.i: Socket.cpp.i
+
+.PHONY : Socket.i
+
+# target to preprocess a source file
+Socket.cpp.i:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Socket.cpp.i
+.PHONY : Socket.cpp.i
+
+Socket.s: Socket.cpp.s
+
+.PHONY : Socket.s
+
+# target to generate assembly for a file
+Socket.cpp.s:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Socket.cpp.s
+.PHONY : Socket.cpp.s
+
+TcpConnection.o: TcpConnection.cpp.o
+
+.PHONY : TcpConnection.o
+
+# target to build an object file
+TcpConnection.cpp.o:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/TcpConnection.cpp.o
+.PHONY : TcpConnection.cpp.o
+
+TcpConnection.i: TcpConnection.cpp.i
+
+.PHONY : TcpConnection.i
+
+# target to preprocess a source file
+TcpConnection.cpp.i:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/TcpConnection.cpp.i
+.PHONY : TcpConnection.cpp.i
+
+TcpConnection.s: TcpConnection.cpp.s
+
+.PHONY : TcpConnection.s
+
+# target to generate assembly for a file
+TcpConnection.cpp.s:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/TcpConnection.cpp.s
+.PHONY : TcpConnection.cpp.s
+
+TcpServer.o: TcpServer.cpp.o
+
+.PHONY : TcpServer.o
+
+# target to build an object file
+TcpServer.cpp.o:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/TcpServer.cpp.o
+.PHONY : TcpServer.cpp.o
+
+TcpServer.i: TcpServer.cpp.i
+
+.PHONY : TcpServer.i
+
+# target to preprocess a source file
+TcpServer.cpp.i:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/TcpServer.cpp.i
+.PHONY : TcpServer.cpp.i
+
+TcpServer.s: TcpServer.cpp.s
+
+.PHONY : TcpServer.s
+
+# target to generate assembly for a file
+TcpServer.cpp.s:
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/TcpServer.cpp.s
+.PHONY : TcpServer.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +348,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MServer"
+	@echo "... Acceptor.o"
+	@echo "... Acceptor.i"
+	@echo "... Acceptor.s"
+	@echo "... Channel.o"
+	@echo "... Channel.i"
+	@echo "... Channel.s"
+	@echo "... Epoller.o"
+	@echo "... Epoller.i"
+	@echo "... Epoller.s"
+	@echo "... EventLoop.o"
+	@echo "... EventLoop.i"
+	@echo "... EventLoop.s"
+	@echo "... Socket.o"
+	@echo "... Socket.i"
+	@echo "... Socket.s"
+	@echo "... TcpConnection.o"
+	@echo "... TcpConnection.i"
+	@echo "... TcpConnection.s"
+	@echo "... TcpServer.o"
+	@echo "... TcpServer.i"
+	@echo "... TcpServer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

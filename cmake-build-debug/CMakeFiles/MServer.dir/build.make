@@ -81,17 +81,199 @@ CMakeFiles/MServer.dir/main.cpp.o.provides: CMakeFiles/MServer.dir/main.cpp.o.re
 CMakeFiles/MServer.dir/main.cpp.o.provides.build: CMakeFiles/MServer.dir/main.cpp.o
 
 
+CMakeFiles/MServer.dir/EventLoop.cpp.o: CMakeFiles/MServer.dir/flags.make
+CMakeFiles/MServer.dir/EventLoop.cpp.o: ../EventLoop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sun/MServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MServer.dir/EventLoop.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MServer.dir/EventLoop.cpp.o -c /home/sun/MServer/EventLoop.cpp
+
+CMakeFiles/MServer.dir/EventLoop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MServer.dir/EventLoop.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sun/MServer/EventLoop.cpp > CMakeFiles/MServer.dir/EventLoop.cpp.i
+
+CMakeFiles/MServer.dir/EventLoop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MServer.dir/EventLoop.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sun/MServer/EventLoop.cpp -o CMakeFiles/MServer.dir/EventLoop.cpp.s
+
+CMakeFiles/MServer.dir/EventLoop.cpp.o.requires:
+
+.PHONY : CMakeFiles/MServer.dir/EventLoop.cpp.o.requires
+
+CMakeFiles/MServer.dir/EventLoop.cpp.o.provides: CMakeFiles/MServer.dir/EventLoop.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/EventLoop.cpp.o.provides.build
+.PHONY : CMakeFiles/MServer.dir/EventLoop.cpp.o.provides
+
+CMakeFiles/MServer.dir/EventLoop.cpp.o.provides.build: CMakeFiles/MServer.dir/EventLoop.cpp.o
+
+
+CMakeFiles/MServer.dir/Socket.cpp.o: CMakeFiles/MServer.dir/flags.make
+CMakeFiles/MServer.dir/Socket.cpp.o: ../Socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sun/MServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MServer.dir/Socket.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MServer.dir/Socket.cpp.o -c /home/sun/MServer/Socket.cpp
+
+CMakeFiles/MServer.dir/Socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MServer.dir/Socket.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sun/MServer/Socket.cpp > CMakeFiles/MServer.dir/Socket.cpp.i
+
+CMakeFiles/MServer.dir/Socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MServer.dir/Socket.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sun/MServer/Socket.cpp -o CMakeFiles/MServer.dir/Socket.cpp.s
+
+CMakeFiles/MServer.dir/Socket.cpp.o.requires:
+
+.PHONY : CMakeFiles/MServer.dir/Socket.cpp.o.requires
+
+CMakeFiles/MServer.dir/Socket.cpp.o.provides: CMakeFiles/MServer.dir/Socket.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Socket.cpp.o.provides.build
+.PHONY : CMakeFiles/MServer.dir/Socket.cpp.o.provides
+
+CMakeFiles/MServer.dir/Socket.cpp.o.provides.build: CMakeFiles/MServer.dir/Socket.cpp.o
+
+
+CMakeFiles/MServer.dir/Channel.cpp.o: CMakeFiles/MServer.dir/flags.make
+CMakeFiles/MServer.dir/Channel.cpp.o: ../Channel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sun/MServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MServer.dir/Channel.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MServer.dir/Channel.cpp.o -c /home/sun/MServer/Channel.cpp
+
+CMakeFiles/MServer.dir/Channel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MServer.dir/Channel.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sun/MServer/Channel.cpp > CMakeFiles/MServer.dir/Channel.cpp.i
+
+CMakeFiles/MServer.dir/Channel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MServer.dir/Channel.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sun/MServer/Channel.cpp -o CMakeFiles/MServer.dir/Channel.cpp.s
+
+CMakeFiles/MServer.dir/Channel.cpp.o.requires:
+
+.PHONY : CMakeFiles/MServer.dir/Channel.cpp.o.requires
+
+CMakeFiles/MServer.dir/Channel.cpp.o.provides: CMakeFiles/MServer.dir/Channel.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Channel.cpp.o.provides.build
+.PHONY : CMakeFiles/MServer.dir/Channel.cpp.o.provides
+
+CMakeFiles/MServer.dir/Channel.cpp.o.provides.build: CMakeFiles/MServer.dir/Channel.cpp.o
+
+
+CMakeFiles/MServer.dir/TcpServer.cpp.o: CMakeFiles/MServer.dir/flags.make
+CMakeFiles/MServer.dir/TcpServer.cpp.o: ../TcpServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sun/MServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MServer.dir/TcpServer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MServer.dir/TcpServer.cpp.o -c /home/sun/MServer/TcpServer.cpp
+
+CMakeFiles/MServer.dir/TcpServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MServer.dir/TcpServer.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sun/MServer/TcpServer.cpp > CMakeFiles/MServer.dir/TcpServer.cpp.i
+
+CMakeFiles/MServer.dir/TcpServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MServer.dir/TcpServer.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sun/MServer/TcpServer.cpp -o CMakeFiles/MServer.dir/TcpServer.cpp.s
+
+CMakeFiles/MServer.dir/TcpServer.cpp.o.requires:
+
+.PHONY : CMakeFiles/MServer.dir/TcpServer.cpp.o.requires
+
+CMakeFiles/MServer.dir/TcpServer.cpp.o.provides: CMakeFiles/MServer.dir/TcpServer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/TcpServer.cpp.o.provides.build
+.PHONY : CMakeFiles/MServer.dir/TcpServer.cpp.o.provides
+
+CMakeFiles/MServer.dir/TcpServer.cpp.o.provides.build: CMakeFiles/MServer.dir/TcpServer.cpp.o
+
+
+CMakeFiles/MServer.dir/Acceptor.cpp.o: CMakeFiles/MServer.dir/flags.make
+CMakeFiles/MServer.dir/Acceptor.cpp.o: ../Acceptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sun/MServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MServer.dir/Acceptor.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MServer.dir/Acceptor.cpp.o -c /home/sun/MServer/Acceptor.cpp
+
+CMakeFiles/MServer.dir/Acceptor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MServer.dir/Acceptor.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sun/MServer/Acceptor.cpp > CMakeFiles/MServer.dir/Acceptor.cpp.i
+
+CMakeFiles/MServer.dir/Acceptor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MServer.dir/Acceptor.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sun/MServer/Acceptor.cpp -o CMakeFiles/MServer.dir/Acceptor.cpp.s
+
+CMakeFiles/MServer.dir/Acceptor.cpp.o.requires:
+
+.PHONY : CMakeFiles/MServer.dir/Acceptor.cpp.o.requires
+
+CMakeFiles/MServer.dir/Acceptor.cpp.o.provides: CMakeFiles/MServer.dir/Acceptor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Acceptor.cpp.o.provides.build
+.PHONY : CMakeFiles/MServer.dir/Acceptor.cpp.o.provides
+
+CMakeFiles/MServer.dir/Acceptor.cpp.o.provides.build: CMakeFiles/MServer.dir/Acceptor.cpp.o
+
+
+CMakeFiles/MServer.dir/TcpConnection.cpp.o: CMakeFiles/MServer.dir/flags.make
+CMakeFiles/MServer.dir/TcpConnection.cpp.o: ../TcpConnection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sun/MServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MServer.dir/TcpConnection.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MServer.dir/TcpConnection.cpp.o -c /home/sun/MServer/TcpConnection.cpp
+
+CMakeFiles/MServer.dir/TcpConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MServer.dir/TcpConnection.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sun/MServer/TcpConnection.cpp > CMakeFiles/MServer.dir/TcpConnection.cpp.i
+
+CMakeFiles/MServer.dir/TcpConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MServer.dir/TcpConnection.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sun/MServer/TcpConnection.cpp -o CMakeFiles/MServer.dir/TcpConnection.cpp.s
+
+CMakeFiles/MServer.dir/TcpConnection.cpp.o.requires:
+
+.PHONY : CMakeFiles/MServer.dir/TcpConnection.cpp.o.requires
+
+CMakeFiles/MServer.dir/TcpConnection.cpp.o.provides: CMakeFiles/MServer.dir/TcpConnection.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/TcpConnection.cpp.o.provides.build
+.PHONY : CMakeFiles/MServer.dir/TcpConnection.cpp.o.provides
+
+CMakeFiles/MServer.dir/TcpConnection.cpp.o.provides.build: CMakeFiles/MServer.dir/TcpConnection.cpp.o
+
+
+CMakeFiles/MServer.dir/Epoller.cpp.o: CMakeFiles/MServer.dir/flags.make
+CMakeFiles/MServer.dir/Epoller.cpp.o: ../Epoller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sun/MServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MServer.dir/Epoller.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MServer.dir/Epoller.cpp.o -c /home/sun/MServer/Epoller.cpp
+
+CMakeFiles/MServer.dir/Epoller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MServer.dir/Epoller.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sun/MServer/Epoller.cpp > CMakeFiles/MServer.dir/Epoller.cpp.i
+
+CMakeFiles/MServer.dir/Epoller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MServer.dir/Epoller.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sun/MServer/Epoller.cpp -o CMakeFiles/MServer.dir/Epoller.cpp.s
+
+CMakeFiles/MServer.dir/Epoller.cpp.o.requires:
+
+.PHONY : CMakeFiles/MServer.dir/Epoller.cpp.o.requires
+
+CMakeFiles/MServer.dir/Epoller.cpp.o.provides: CMakeFiles/MServer.dir/Epoller.cpp.o.requires
+	$(MAKE) -f CMakeFiles/MServer.dir/build.make CMakeFiles/MServer.dir/Epoller.cpp.o.provides.build
+.PHONY : CMakeFiles/MServer.dir/Epoller.cpp.o.provides
+
+CMakeFiles/MServer.dir/Epoller.cpp.o.provides.build: CMakeFiles/MServer.dir/Epoller.cpp.o
+
+
 # Object files for target MServer
 MServer_OBJECTS = \
-"CMakeFiles/MServer.dir/main.cpp.o"
+"CMakeFiles/MServer.dir/main.cpp.o" \
+"CMakeFiles/MServer.dir/EventLoop.cpp.o" \
+"CMakeFiles/MServer.dir/Socket.cpp.o" \
+"CMakeFiles/MServer.dir/Channel.cpp.o" \
+"CMakeFiles/MServer.dir/TcpServer.cpp.o" \
+"CMakeFiles/MServer.dir/Acceptor.cpp.o" \
+"CMakeFiles/MServer.dir/TcpConnection.cpp.o" \
+"CMakeFiles/MServer.dir/Epoller.cpp.o"
 
 # External object files for target MServer
 MServer_EXTERNAL_OBJECTS =
 
 MServer: CMakeFiles/MServer.dir/main.cpp.o
+MServer: CMakeFiles/MServer.dir/EventLoop.cpp.o
+MServer: CMakeFiles/MServer.dir/Socket.cpp.o
+MServer: CMakeFiles/MServer.dir/Channel.cpp.o
+MServer: CMakeFiles/MServer.dir/TcpServer.cpp.o
+MServer: CMakeFiles/MServer.dir/Acceptor.cpp.o
+MServer: CMakeFiles/MServer.dir/TcpConnection.cpp.o
+MServer: CMakeFiles/MServer.dir/Epoller.cpp.o
 MServer: CMakeFiles/MServer.dir/build.make
 MServer: CMakeFiles/MServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sun/MServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sun/MServer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable MServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -100,6 +282,13 @@ CMakeFiles/MServer.dir/build: MServer
 .PHONY : CMakeFiles/MServer.dir/build
 
 CMakeFiles/MServer.dir/requires: CMakeFiles/MServer.dir/main.cpp.o.requires
+CMakeFiles/MServer.dir/requires: CMakeFiles/MServer.dir/EventLoop.cpp.o.requires
+CMakeFiles/MServer.dir/requires: CMakeFiles/MServer.dir/Socket.cpp.o.requires
+CMakeFiles/MServer.dir/requires: CMakeFiles/MServer.dir/Channel.cpp.o.requires
+CMakeFiles/MServer.dir/requires: CMakeFiles/MServer.dir/TcpServer.cpp.o.requires
+CMakeFiles/MServer.dir/requires: CMakeFiles/MServer.dir/Acceptor.cpp.o.requires
+CMakeFiles/MServer.dir/requires: CMakeFiles/MServer.dir/TcpConnection.cpp.o.requires
+CMakeFiles/MServer.dir/requires: CMakeFiles/MServer.dir/Epoller.cpp.o.requires
 
 .PHONY : CMakeFiles/MServer.dir/requires
 

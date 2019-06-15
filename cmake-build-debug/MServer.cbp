@@ -84,6 +84,48 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/sun/MServer/Acceptor.cpp">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/Acceptor.h">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/Channel.cpp">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/Channel.h">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/Epoller.cpp">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/Epoller.h">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/EventLoop.cpp">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/EventLoop.h">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/Socket.cpp">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/Socket.h">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/TcpConnection.cpp">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/TcpConnection.h">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/TcpServer.cpp">
+			<Option target="MServer"/>
+		</Unit>
+		<Unit filename="/home/sun/MServer/TcpServer.h">
+			<Option target="MServer"/>
+		</Unit>
 		<Unit filename="/home/sun/MServer/main.cpp">
 			<Option target="MServer"/>
 		</Unit>
