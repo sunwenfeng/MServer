@@ -14,24 +14,23 @@
 #include <map>
 #include "Channel.h"
 
-const int MAXEVENTS = 4096;
-const int EPOLL_WAIT_TIME 10000;
+const int MAXEVENTS = 4096;             //epoll_wait最多能监听的事件数
+const int EPOLL_WAIT_TIME = 10000;      //epoll_wait的超时事件，ms
 
 class Epoller {
 public:
     Epoller():epollfd(epoll_create(1)),epoll_revents(MAXEVENTS){    }
     ~Epoller(){}
 
-    int poller(std::vector<Channel*>& activeChannel);
+    int poller(std::vector<Channel*>& activeChannels);  //就就绪的IO对应的Channel加入activeChannels，供EventLoop使用
 
-    int update_events();               //更新epoll关心的事件
-
+    int epoll_updateEvents(Channel* channel);
 
 private:
     int epollfd;  //epoll文件描述符
     //事件就绪后，需要通过channel进行事件的处理，而epoll_wait只会返回就绪的描述符，需要通过描述符找到对应的channel，需要下面这个map
     std::map<int,Channel*> ChannelMap;
-    std::vector<struct epoll_event> epoll_revents; //epoll_wait返回的就绪事件列表
+    std::vector<struct epoll_event> epoll_revents; //epoll_wait返回的就绪事件列表,大小为MAXEVENTS
 };
 
 
