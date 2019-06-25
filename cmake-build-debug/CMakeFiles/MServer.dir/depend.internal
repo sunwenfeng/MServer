@@ -4,15 +4,23 @@
 CMakeFiles/MServer.dir/Acceptor.cpp.o
  /home/sun/MServer/Acceptor.cpp
  /home/sun/MServer/Acceptor.h
+ /home/sun/MServer/Channel.h
+ /home/sun/MServer/Epoller.h
+ /home/sun/MServer/EventLoop.h
  /home/sun/MServer/Socket.h
 CMakeFiles/MServer.dir/Channel.cpp.o
  /home/sun/MServer/Channel.cpp
  /home/sun/MServer/Channel.h
+ /home/sun/MServer/Epoller.h
+ /home/sun/MServer/EventLoop.h
 CMakeFiles/MServer.dir/Epoller.cpp.o
  /home/sun/MServer/Channel.h
  /home/sun/MServer/Epoller.cpp
  /home/sun/MServer/Epoller.h
+ /home/sun/MServer/EventLoop.h
 CMakeFiles/MServer.dir/EventLoop.cpp.o
+ /home/sun/MServer/Channel.h
+ /home/sun/MServer/Epoller.h
  /home/sun/MServer/EventLoop.cpp
  /home/sun/MServer/EventLoop.h
 CMakeFiles/MServer.dir/Socket.cpp.o
@@ -24,6 +32,9 @@ CMakeFiles/MServer.dir/TcpConnection.cpp.o
  /home/sun/MServer/TcpConnection.h
 CMakeFiles/MServer.dir/TcpServer.cpp.o
  /home/sun/MServer/Acceptor.h
+ /home/sun/MServer/Channel.h
+ /home/sun/MServer/Epoller.h
+ /home/sun/MServer/EventLoop.h
  /home/sun/MServer/Socket.h
  /home/sun/MServer/TcpConnection.h
  /home/sun/MServer/TcpServer.cpp

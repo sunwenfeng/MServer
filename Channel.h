@@ -12,6 +12,8 @@ public:
     Channel(EventLoop* loop_,int fd_);
     ~Channel();
 
+    typedef std::function<void()> ChannelCallback;
+
     int handleEvents();
 
     void addReadToEvents();             //更新自己对应的描述符的关心事件，并更新Epoller的关心事件
@@ -23,6 +25,10 @@ public:
     u_int32_t get_fd_events(){
         return fd_events;
     }
+    void setReadCallback(ChannelCallback _callback){
+        readCallback = _callback;
+    }
+
 private:
 
     u_int32_t fd_events;
@@ -36,6 +42,14 @@ private:
     EventLoop* loop;
     /*还是上面的问题，channel需要更新Epoller的关心事件，但channel不知道Epoller，需要EventLoop的转接，所以需要EventLoop的指针
     此外，channel负责EventLoop和TcpConnection/Acceptor的转接，所以更需要知道EventLoop的指针*/
+
+    ChannelCallback readCallback;
+    ChannelCallback writeCallback;
+    ChannelCallback closeCallback;
+    /* channel的回调函数，在Acceptor和TcpConnection中绑定不同的函数*/
+
+
+
 };
 
 #endif //MSERVER_CHANNEL_H

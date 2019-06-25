@@ -20,10 +20,15 @@ public:
         if(socketfd < 0)
             std::cout<<"socket() error"<<std::endl;
     }
+    Socket(int fd):socketfd(fd){}
+
     ~Socket(){
         close(socketfd);
     }
 
+    int getSocketfd(){
+        return socketfd;
+    }
     int Bind(uint16_t port) const;
     int Listen() const;
     int Accept(struct sockaddr_in *client) const;

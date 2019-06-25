@@ -8,12 +8,29 @@
 #include <memory>
 
 #include "Socket.h"
+#include "Channel.h"
 
 class TcpConnection {
 public:
+    typedef std::function<void()> TcpConnectionCalback;
+
+    TcpConnection(EventLoop* loop,int fd);
+    ~TcpConnection();
+
+    void handleRead();
+
+    void addConnToEvents();
+
+    void setTcpConnectionReadCalback(TcpConnectionCalback callback){
+        TcpConnectionReadCalback = callback;
+    }
+
 
 private:
-    std::unique_ptr<Socket> connectfd;
+    std::unique_ptr<Socket> connectfd_;
+    std::unique_ptr<Channel> tcpConnectionChannel_;
+
+    TcpConnectionCalback TcpConnectionReadCalback;
 };
 
 extern typedef std::shared_ptr<TcpConnection> TcpConnetionPtr;
