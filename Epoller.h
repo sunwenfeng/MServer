@@ -22,7 +22,7 @@ public:
     Epoller():epollfd(epoll_create(1)),epoll_revents(MAXEVENTS){    }
     ~Epoller(){}
 
-    int poller(std::vector<Channel*>& activeChannels);  //就就绪的IO对应的Channel加入activeChannels，供EventLoop使用
+    int poller(std::vector<Channel*> &activeChannels);  //就就绪的IO对应的Channel加入activeChannels，供EventLoop使用
 
     int epoll_updateEvents(Channel* channel);
 

@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MServer.dir/Acceptor.cpp.o"
   "CMakeFiles/MServer.dir/TcpConnection.cpp.o"
   "CMakeFiles/MServer.dir/Epoller.cpp.o"
+  "CMakeFiles/MServer.dir/Buffer.cpp.o"
   "MServer.pdb"
   "MServer"
 )

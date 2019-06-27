@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include "Epoller.h"
-int Epoller::poller(std::vector<Channel*>& activeChannels) {
+int Epoller::poller(std::vector<Channel*> &activeChannels) {
     // epoll描述符将监听的socket和对应的事件存储在一颗红黑树上，所以不需要单独的数据结构来保存epoll监听的套接字
     // 而epoll_wait会将就绪的描述符和事件以（struct epoll）返回
 
@@ -15,6 +15,7 @@ int Epoller::poller(std::vector<Channel*>& activeChannels) {
     for(int i=0;i<ret;i++){
         int active_fd = epoll_revents[i].data.fd;  //就绪事件的描述符
         Channel* active_Channel = ChannelMap[active_fd];
+        active_Channel->set_fd_revents(epoll_revents[i].events);
         activeChannels.push_back(active_Channel);
     }
 
@@ -42,6 +43,8 @@ int Epoller::epoll_updateEvents(Channel *channel) { //EventLoop::updateEvents调
         struct epoll_event ev;
         ev.events = channel->get_fd_events();
         ev.data.fd = fd_;
+
+        std::cout<<fd_<<" mod epoll"<<std::endl;
 
         int ret = epoll_ctl(epollfd,EPOLL_CTL_ADD,fd_,&ev);
         if(ret < 0)

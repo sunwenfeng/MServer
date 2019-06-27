@@ -1,16 +1,18 @@
 #include <iostream>
 #include <functional>
-class Server{
-public:
-    void connection(int k,int m){
-        std::cout<<"yes"<<std::endl;
-    }
-private:
+#include "TcpServer.h"
+#include "EventLoop.h"
 
-};
+void message(){
+    std::cout<<"receive one message"<<std::endl;
+    write(5,"hello",sizeof("hello"));
+}
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    Server s;
-    std::function<void(int,int)> f = std::bind(&Server::connection,&s);
+    EventLoop loop;
+    TcpServer server(&loop,2008);
+    server.setTcpServerReadCallback(std::bind(message));
+    server.start();
+    loop.loop();
+
     return 0;
 }

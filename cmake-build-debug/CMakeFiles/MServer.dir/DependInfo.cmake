@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sun/MServer/Acceptor.cpp" "/home/sun/MServer/cmake-build-debug/CMakeFiles/MServer.dir/Acceptor.cpp.o"
+  "/home/sun/MServer/Buffer.cpp" "/home/sun/MServer/cmake-build-debug/CMakeFiles/MServer.dir/Buffer.cpp.o"
   "/home/sun/MServer/Channel.cpp" "/home/sun/MServer/cmake-build-debug/CMakeFiles/MServer.dir/Channel.cpp.o"
   "/home/sun/MServer/Epoller.cpp" "/home/sun/MServer/cmake-build-debug/CMakeFiles/MServer.dir/Epoller.cpp.o"
   "/home/sun/MServer/EventLoop.cpp" "/home/sun/MServer/cmake-build-debug/CMakeFiles/MServer.dir/EventLoop.cpp.o"

@@ -18,20 +18,26 @@
 class TcpServer {
 public:
     typedef std::function<void()> TcpServerCallback;
+    typedef struct sockaddr_in SA;
 
-    TcpServer(EventLoop* loop,uint16_t port){}
-    ~TcpServer(){}
+    TcpServer(EventLoop* loop,uint16_t port);
+    ~TcpServer(){
+        std::cout<<"TcpServer closed"<<std::endl;
+    }
 
-    int start();
+    void start();
 
-    void newConnection(const int connfd,const struct addr_in clientAddr);   //TcpServer在接受一个新连接之后执行的动作，传递给Acceptor的回调函数调用
+    void newConnection(int connfd,struct sockaddr_in clientAddr);   //TcpServer在接受一个新连接之后执行的动作，传递给Acceptor的回调函数调用
 
+    void setTcpServerReadCallback(TcpServerCallback callback_){
+        TcpServerReadCallback = callback_;
+    }
 private:
     EventLoop* loop;
     std::unique_ptr<Acceptor> Acceptor_;             //加后缀下划线表明是智能指针
     std::map<int,TcpConnetionPtr> ConnectionMap;     //描述符和对应的TcpConnection对象
 
-    TcpServerCallback connectionCallback;            //建立新连接之后的回调函数，一般打印客户端信息
+    //TcpServerCallback connectionCallback;            //建立新连接之后的回调函数，一般打印客户端信息
     TcpServerCallback TcpServerReadCallback;         //业务逻辑处理
 
 };

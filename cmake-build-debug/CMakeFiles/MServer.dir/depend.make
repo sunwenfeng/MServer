@@ -4,9 +4,10 @@
 CMakeFiles/MServer.dir/Acceptor.cpp.o: ../Acceptor.cpp
 CMakeFiles/MServer.dir/Acceptor.cpp.o: ../Acceptor.h
 CMakeFiles/MServer.dir/Acceptor.cpp.o: ../Channel.h
-CMakeFiles/MServer.dir/Acceptor.cpp.o: ../Epoller.h
-CMakeFiles/MServer.dir/Acceptor.cpp.o: ../EventLoop.h
 CMakeFiles/MServer.dir/Acceptor.cpp.o: ../Socket.h
+
+CMakeFiles/MServer.dir/Buffer.cpp.o: ../Buffer.cpp
+CMakeFiles/MServer.dir/Buffer.cpp.o: ../Buffer.h
 
 CMakeFiles/MServer.dir/Channel.cpp.o: ../Channel.cpp
 CMakeFiles/MServer.dir/Channel.cpp.o: ../Channel.h
@@ -16,7 +17,6 @@ CMakeFiles/MServer.dir/Channel.cpp.o: ../EventLoop.h
 CMakeFiles/MServer.dir/Epoller.cpp.o: ../Channel.h
 CMakeFiles/MServer.dir/Epoller.cpp.o: ../Epoller.cpp
 CMakeFiles/MServer.dir/Epoller.cpp.o: ../Epoller.h
-CMakeFiles/MServer.dir/Epoller.cpp.o: ../EventLoop.h
 
 CMakeFiles/MServer.dir/EventLoop.cpp.o: ../Channel.h
 CMakeFiles/MServer.dir/EventLoop.cpp.o: ../Epoller.h
@@ -26,18 +26,27 @@ CMakeFiles/MServer.dir/EventLoop.cpp.o: ../EventLoop.h
 CMakeFiles/MServer.dir/Socket.cpp.o: ../Socket.cpp
 CMakeFiles/MServer.dir/Socket.cpp.o: ../Socket.h
 
+CMakeFiles/MServer.dir/TcpConnection.cpp.o: ../Buffer.h
+CMakeFiles/MServer.dir/TcpConnection.cpp.o: ../Channel.h
 CMakeFiles/MServer.dir/TcpConnection.cpp.o: ../Socket.h
 CMakeFiles/MServer.dir/TcpConnection.cpp.o: ../TcpConnection.cpp
 CMakeFiles/MServer.dir/TcpConnection.cpp.o: ../TcpConnection.h
 
 CMakeFiles/MServer.dir/TcpServer.cpp.o: ../Acceptor.h
+CMakeFiles/MServer.dir/TcpServer.cpp.o: ../Buffer.h
 CMakeFiles/MServer.dir/TcpServer.cpp.o: ../Channel.h
-CMakeFiles/MServer.dir/TcpServer.cpp.o: ../Epoller.h
-CMakeFiles/MServer.dir/TcpServer.cpp.o: ../EventLoop.h
 CMakeFiles/MServer.dir/TcpServer.cpp.o: ../Socket.h
 CMakeFiles/MServer.dir/TcpServer.cpp.o: ../TcpConnection.h
 CMakeFiles/MServer.dir/TcpServer.cpp.o: ../TcpServer.cpp
 CMakeFiles/MServer.dir/TcpServer.cpp.o: ../TcpServer.h
 
+CMakeFiles/MServer.dir/main.cpp.o: ../Acceptor.h
+CMakeFiles/MServer.dir/main.cpp.o: ../Buffer.h
+CMakeFiles/MServer.dir/main.cpp.o: ../Channel.h
+CMakeFiles/MServer.dir/main.cpp.o: ../Epoller.h
+CMakeFiles/MServer.dir/main.cpp.o: ../EventLoop.h
+CMakeFiles/MServer.dir/main.cpp.o: ../Socket.h
+CMakeFiles/MServer.dir/main.cpp.o: ../TcpConnection.h
+CMakeFiles/MServer.dir/main.cpp.o: ../TcpServer.h
 CMakeFiles/MServer.dir/main.cpp.o: ../main.cpp
 

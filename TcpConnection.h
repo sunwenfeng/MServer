@@ -9,13 +9,16 @@
 
 #include "Socket.h"
 #include "Channel.h"
+#include "Buffer.h"
 
 class TcpConnection {
 public:
     typedef std::function<void()> TcpConnectionCalback;
 
     TcpConnection(EventLoop* loop,int fd);
-    ~TcpConnection();
+    ~TcpConnection(){
+        std::cout<<"TcpConnection closed"<<std::endl;
+    }
 
     void handleRead();
 
@@ -30,9 +33,11 @@ private:
     std::unique_ptr<Socket> connectfd_;
     std::unique_ptr<Channel> tcpConnectionChannel_;
 
-    TcpConnectionCalback TcpConnectionReadCalback;
+    Buffer InputBuffer;
+
+    TcpConnectionCalback TcpConnectionReadCalback;     //业务逻辑处理
 };
 
-extern typedef std::shared_ptr<TcpConnection> TcpConnetionPtr;
+typedef std::shared_ptr<TcpConnection> TcpConnetionPtr;
 
 #endif //MSERVER_TCPCONNECTION_H

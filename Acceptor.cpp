@@ -12,7 +12,7 @@ Acceptor::Acceptor(EventLoop* loop,uint16_t port)
          acceptorChannel(loop,acceptfd.getSocketfd())
 {
     acceptfd.Bind(port);
-    acceptorChannel.setReadCallback(std::bind(&Acceptor::handleReadEvent,this)); //channel有多个callback，目前只设置acceptor的readcallback
+    acceptorChannel.setChannelReadCallback(std::bind(&Acceptor::handleReadEvent,this)); //channel有多个callback，目前只设置acceptor的readcallback
 
 }
 
@@ -30,6 +30,7 @@ void Acceptor::handleReadEvent() {  //监听描述符可写之后，由channel�
         //还应该进行一些其他的处理
     }
     else{
-        newConnectionCallback();    //创建TcpConnection类来管理新连接，而Acceptor不知道TcpConnection的存在，通过回调函数让上层的TcpServer去创建TcpConnection对象
+        std::cout<<"accept connect"<<std::endl;
+        newConnectionCallback(connfd,client);    //创建TcpConnection类来管理新连接，而Acceptor不知道TcpConnection的存在，通过回调函数让上层的TcpServer去创建TcpConnection对象
     }
 }

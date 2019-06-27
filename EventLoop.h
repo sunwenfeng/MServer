@@ -16,7 +16,9 @@
  * */
 class EventLoop {
 public:
-    EventLoop();
+    EventLoop():epoll(new Epoller()){
+        activeChannels.clear();
+    }
     ~EventLoop();
 
     int loop();
@@ -26,7 +28,6 @@ public:
 private:
     std::unique_ptr<Epoller> epoll;
     std::vector<Channel*> activeChannels;  //由Epoller返回就绪的channel
-
 };
 
 

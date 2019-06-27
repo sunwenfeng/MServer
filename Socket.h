@@ -8,6 +8,7 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <unistd.h>
+#include <iostream>
 
 /*
  * 用RAII的方式管理socket套接字，用socket对象管理socket的读写操作，并且在析构函数中关闭socket

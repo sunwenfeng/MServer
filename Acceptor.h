@@ -12,23 +12,25 @@
 
 class Acceptor {
 public:
-    typedef std::function<void(const int ,const struct addr_in)> AcceptorCallback;
+    typedef std::function<void(int,struct sockaddr_in)> AcceptorCallback;
 
     Acceptor(EventLoop* loop,uint16_t port);
-    ~Acceptor();
+    ~Acceptor(){
+        std::cout<<"Acceptor closed"<<std::endl;
+    }
 
     void start();
 
     void handleReadEvent();
 
-    void setNewConnectionCallback(AcceptorCallback callback){
+    void setAcceptorNewConnectionCallback(AcceptorCallback callback){
         newConnectionCallback = callback;
     }
 
 private:
     Socket acceptfd;                                //监听socket
     Channel acceptorChannel;                        //负责acceptfd IO的channel
-    AcceptorCallback newConnectionCallback;         //listen之后调用的回调函数
+    AcceptorCallback newConnectionCallback;         //listen之后调用的回调函数,进行accept及后续操作
 
 };
 

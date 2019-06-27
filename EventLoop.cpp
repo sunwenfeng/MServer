@@ -5,8 +5,6 @@
 #include <iostream>
 #include "EventLoop.h"
 
-EventLoop::EventLoop() {}
-
 EventLoop::~EventLoop() {}
 
 int EventLoop::updateEvents(Channel *channel) {
@@ -25,6 +23,7 @@ int EventLoop::loop() {
         for(it=activeChannels.begin();it!=activeChannels.end();++it){
             Channel* channel_ = *it;
             channel_->handleEvents();
+            //std::cout<<channel_->get_fd()<<" is ready"<<std::endl;
         }
     }
 }
