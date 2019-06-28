@@ -4,7 +4,7 @@
 
 #include <sys/uio.h>
 #include "Buffer.h"
-int Buffer::readData(int fd) {
+int Buffer::readData(int fd,int& error) {
     char extraBuffer[65536];
 
     struct iovec iov[2];
@@ -15,7 +15,9 @@ int Buffer::readData(int fd) {
 
     int readLen = readv(fd,iov,2); //依次写入AL_Buffer和extraBuffer两个缓冲区。
 
-    if(readLen <= 0){
+    if(readLen <= 0){   //成功返回读写字节数，出错返回-1,对方关闭返回0
+        //std::cout<<"errno is "<<errno;
+        error = errno;
         return  readLen;
     }
 
@@ -47,4 +49,11 @@ int Buffer::readData(int fd) {
         return readLen;
     }
 
+}
+
+void Buffer::printData(int len) {
+    for(int i=0;i<len;i++){
+        std::cout<<AL_Buffer[i];
+    }
+    std::cout<<std::endl;
 }

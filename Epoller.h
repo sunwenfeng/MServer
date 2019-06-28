@@ -25,6 +25,7 @@ public:
     int poller(std::vector<Channel*> &activeChannels);  //就就绪的IO对应的Channel加入activeChannels，供EventLoop使用
 
     int epoll_updateEvents(Channel* channel);
+    int epoll_removeEvents(Channel* channel);
 
 private:
     int epollfd;  //epoll文件描述符

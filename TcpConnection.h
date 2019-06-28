@@ -14,6 +14,7 @@
 class TcpConnection {
 public:
     typedef std::function<void()> TcpConnectionCalback;
+    typedef std::function<void(int)> TcpCloseConnCalback;
 
     TcpConnection(EventLoop* loop,int fd);
     ~TcpConnection(){
@@ -27,7 +28,9 @@ public:
     void setTcpConnectionReadCalback(TcpConnectionCalback callback){
         TcpConnectionReadCalback = callback;
     }
-
+    void setTcpConnectionCloseCalback(TcpCloseConnCalback callback){
+        TcpConnectionCloseCalback = callback;
+    }
 
 private:
     std::unique_ptr<Socket> connectfd_;
@@ -36,6 +39,8 @@ private:
     Buffer InputBuffer;
 
     TcpConnectionCalback TcpConnectionReadCalback;     //业务逻辑处理
+    TcpCloseConnCalback TcpConnectionCloseCalback;    //关闭连接，通知TcpServer从map中删掉本TcpConnection
+
 };
 
 typedef std::shared_ptr<TcpConnection> TcpConnetionPtr;

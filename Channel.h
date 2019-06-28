@@ -19,7 +19,8 @@ public:
     int handleEvents();
 
     void addReadToEvents();             //更新自己对应的描述符的关心事件，并更新Epoller的关心事件
-    void updateEvents();
+    void updateEvents();                //只处理添加和更新
+    void removeEvents();                //处理事件删除
 
     int get_fd(){
         return fd;

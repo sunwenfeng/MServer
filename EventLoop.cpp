@@ -7,8 +7,12 @@
 
 EventLoop::~EventLoop() {}
 
-int EventLoop::updateEvents(Channel *channel) {
+void EventLoop::updateEvents(Channel *channel) {
     epoll->epoll_updateEvents(channel);
+}
+
+void EventLoop::removeEvents(Channel *channel) {
+    epoll->epoll_removeEvents(channel);
 }
 
 int EventLoop::loop() {

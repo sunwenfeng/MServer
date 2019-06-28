@@ -105,6 +105,8 @@ iostream
 /home/sun/MServer/TcpConnection.cpp
 iostream
 -
+cstring
+-
 TcpConnection.h
 /home/sun/MServer/TcpConnection.h
 

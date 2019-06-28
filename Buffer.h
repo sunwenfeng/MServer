@@ -17,7 +17,9 @@ public:
         std::cout<<"Buffer closed"<<std::endl;
     }
 
-    int readData(int fd);
+    int readData(int fd,int &error);
+
+    void printData(int len);
 
 private:
     std::vector<char> AL_Buffer;

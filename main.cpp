@@ -5,7 +5,7 @@
 
 void message(){
     std::cout<<"receive one message"<<std::endl;
-    write(5,"hello",sizeof("hello"));
+    //write(5,"hello",sizeof("hello"));
 }
 int main() {
     EventLoop loop;

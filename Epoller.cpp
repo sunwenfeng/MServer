@@ -53,3 +53,17 @@ int Epoller::epoll_updateEvents(Channel *channel) { //EventLoop::updateEvents调
     }
 
 }
+
+int Epoller::epoll_removeEvents(Channel *channel) {
+    int fd_ = channel->get_fd();
+    ChannelMap.erase(fd_);
+    struct epoll_event ev;
+    ev.events = channel->get_fd_events();
+    ev.data.fd = fd_;
+    int ret = epoll_ctl(epollfd,EPOLL_CTL_DEL,fd_,&ev);
+    if(ret < 0){
+        std::cout<<"epoll_del error" <<std::endl;
+    }
+    std::cout<<"epoll_del " <<fd_<<std::endl;
+    return ret;
+}

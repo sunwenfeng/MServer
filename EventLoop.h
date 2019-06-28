@@ -23,7 +23,9 @@ public:
 
     int loop();
 
-    int updateEvents(Channel* channel);   //channel::update调用
+    void updateEvents(Channel* channel);   //channel::update调用
+    void removeEvents(Channel* channel);
+
 
 private:
     std::unique_ptr<Epoller> epoll;

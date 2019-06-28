@@ -25,6 +25,7 @@ public:
 
     ~Socket(){
         close(socketfd);
+        std::cout<<"socketfd closed"<<std::endl;
     }
 
     int getSocketfd(){

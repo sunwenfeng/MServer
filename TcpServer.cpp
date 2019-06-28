@@ -23,13 +23,24 @@ void TcpServer::start() {
 void TcpServer::newConnection(const int connfd, const struct sockaddr_in clientAddr ) {
 
     std::cout<<"Received TCP connection from "<<inet_ntoa(clientAddr.sin_addr)<<": "<<ntohs(clientAddr.sin_port)<<"  fd is "<<connfd<<std::endl;
-
+    std::cout<<"******************************************"<<std::endl;
     TcpConnetionPtr newconn(new TcpConnection(loop,connfd));
+
     newconn->setTcpConnectionReadCalback(TcpServerReadCallback);
 
-    ConnectionMap[connfd] = newconn;
+    auto closeFunction = std::bind(&TcpServer::removeConnection,this,std::placeholders::_1);
+    newconn->setTcpConnectionCloseCalback(closeFunction);
 
+    //std::cout<<"count : "<<newconn.use_count()<<std::endl;
+    ConnectionMap[connfd] = newconn;
     //定义TcpConnection对象管理新连接，之后就要将将这个已建立描述符号加入Epoller的关注列表中
     newconn->addConnToEvents();
-
 }
+
+void TcpServer::removeConnection(const int connfd) {
+    ConnectionMap.erase(connfd);             //引用计数为1,从map中删除之后也就析构了
+    std::cout<<"Connetion closed at fd: "<<connfd<<std::endl;
+    std::cout<<"******************************************"<<std::endl;
+}
+
+
