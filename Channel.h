@@ -8,6 +8,14 @@
 #include <functional>
 
 class EventLoop;
+/*
+ * Channel需要通过EventLoop来通知Epoller更新监听事件，需要用到EventLoop的函数
+ * EventLoop在Epoller监听到事件后，需要通过Channel来通知TcpServer，所以要用到Channel的函数
+ * EventLoop和Channel是相互包含的关系，但在两个文件中互相include行不通
+ *
+ * 解决的方法：
+ * 在EventLoop中include"channel"，在Channel中声明EventLoop，并且在类中定义EventLoop*
+ * */
 
 class Channel {
 public:

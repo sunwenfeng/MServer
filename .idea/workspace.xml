@@ -17,29 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63a4e8f8-4e15-49cb-b9e9-fbe55a392c01" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/Acceptor.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/Acceptor.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/Channel.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/Channel.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/Epoller.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/Epoller.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/EventLoop.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/EventLoop.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/TcpConnection.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/TcpConnection.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/TcpServer.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/TcpServer.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/main.cpp.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/MServer.dir/main.cpp.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/MServer" afterPath="$PROJECT_DIR$/cmake-build-debug/MServer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Buffer.cpp" afterPath="$PROJECT_DIR$/Buffer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Buffer.h" afterPath="$PROJECT_DIR$/Buffer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Channel.cpp" afterPath="$PROJECT_DIR$/Channel.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Channel.h" afterPath="$PROJECT_DIR$/Channel.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Epoller.cpp" afterPath="$PROJECT_DIR$/Epoller.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Epoller.h" afterPath="$PROJECT_DIR$/Epoller.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EventLoop.cpp" afterPath="$PROJECT_DIR$/EventLoop.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EventLoop.h" afterPath="$PROJECT_DIR$/EventLoop.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Socket.h" afterPath="$PROJECT_DIR$/Socket.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TcpConnection.cpp" afterPath="$PROJECT_DIR$/TcpConnection.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TcpConnection.h" afterPath="$PROJECT_DIR$/TcpConnection.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TcpServer.cpp" afterPath="$PROJECT_DIR$/TcpServer.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TcpServer.h" afterPath="$PROJECT_DIR$/TcpServer.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+            <state relative-caret-position="238">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -106,8 +84,18 @@
       <file leaf-file-name="TcpConnection.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TcpConnection.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+            <state relative-caret-position="224">
+              <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Channel.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Channel.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -175,7 +163,6 @@
         <option value="$PROJECT_DIR$/Socket.cpp" />
         <option value="$PROJECT_DIR$/Acceptor.h" />
         <option value="$PROJECT_DIR$/Acceptor.cpp" />
-        <option value="$PROJECT_DIR$/Channel.h" />
         <option value="$PROJECT_DIR$/EventLoop.h" />
         <option value="$PROJECT_DIR$/Epoller.h" />
         <option value="$PROJECT_DIR$/EventLoop.cpp" />
@@ -190,6 +177,7 @@
         <option value="$PROJECT_DIR$/TcpConnection.cpp" />
         <option value="$PROJECT_DIR$/TcpServer.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Channel.h" />
       </list>
     </option>
   </component>
@@ -452,12 +440,12 @@
       <workItem from="1561512780522" duration="7645000" />
       <workItem from="1561597479329" duration="48000" />
       <workItem from="1561597613559" duration="15215000" />
-      <workItem from="1561685237423" duration="13077000" />
+      <workItem from="1561685237423" duration="14604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72245000" />
+    <option name="totallyTimeSpent" value="73772000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -479,7 +467,7 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57165605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3535032" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24966888" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32961783" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15231788" sideWeight="0.5063694" order="2" side_tool="true" content_ui="tabs" />
@@ -736,14 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Channel.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EventLoop.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -848,14 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TcpConnection.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/x86_64-linux-gnu/bits/errno.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -886,16 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TcpConnection.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="41" column="93" lean-forward="true" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="93" />
-          <folding>
-            <element signature="e#102#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TcpServer.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -906,8 +868,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="238">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TcpConnection.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="41" column="93" lean-forward="true" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="93" />
+          <folding>
+            <element signature="e#102#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TcpConnection.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Channel.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="69" lean-forward="false" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
           <folding />
         </state>
       </provider>
