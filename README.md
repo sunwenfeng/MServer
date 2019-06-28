@@ -20,5 +20,6 @@
 当read返回0时表明客户端关闭了连接，则服务器关闭该套接字的连接，两个工作：
 * 通知Epoller将该套接字的监听事件删除，由channel通知Epoller
 * 通知TcpServer将管理该套接字的TcpConnection从ConnectionMap中删除，并析构TcpConnection对象。TcpConnection析构时，其类成员Buffer，Channel，Socket类也会析构。由于类Socket通过RAII的方式管理socket套接字，类Socket析构时socket套接字也被关闭，关闭工作完成。
+* 由于是已连接套接字的工作，所以在TcpConnection类中进行，TcpConnection的生命期由TcpServer控制，TcpConnection是TcpServer的类成员，上一条的通知工作由回调函数来完成。
   
  错误处理使用strerror将读套接字时的错误进行输出。
