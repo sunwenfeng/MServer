@@ -69,7 +69,7 @@ void TcpConnection::send(std::string &msg) {
             std::cout<<strerror(errno)<<std::endl;
         }
         std::cout<<"append remain data to outputBuffer and addWriteToEvents"<<std::endl;
-        OutputBuffer.append(static_cast<const char*>(msg)+writeLen,(msgSize-writeLen));//append参数的第一个参数为开始位置，第二个参数为从开始位置之后的长度
+        OutputBuffer.append(msg.data()+writeLen,(msgSize-writeLen));//append参数的第一个参数为开始位置，第二个参数为从开始位置之后的长度
         tcpConnectionChannel_->addWriteToEvents();
     }
 }
