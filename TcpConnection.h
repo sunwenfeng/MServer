@@ -22,6 +22,8 @@ public:
     }
 
     void handleRead();
+    void handleWrite();
+    void send(std::string & msg);
 
     void addConnToEvents();
 
@@ -37,6 +39,7 @@ private:
     std::unique_ptr<Channel> tcpConnectionChannel_;
 
     Buffer InputBuffer;
+    Buffer OutputBuffer;
 
     TcpConnectionCalback TcpConnectionReadCalback;     //业务逻辑处理
     TcpCloseConnCalback TcpConnectionCloseCalback;    //关闭连接，通知TcpServer从map中删掉本TcpConnection

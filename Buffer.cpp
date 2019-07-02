@@ -34,6 +34,7 @@ int Buffer::readData(int fd,int& error) {
         writeIndex = AL_Buffer.size();
 
         //在writeIndex后找出足够的空间
+
         if(freeSize > extraSize){
             std::copy(AL_Buffer.begin()+readIndex,AL_Buffer.begin()+writeIndex,AL_Buffer.begin());
             readIndex = 0;
@@ -57,3 +58,40 @@ void Buffer::printData(int len) {
     }
     std::cout<<std::endl;
 }
+
+void Buffer::append(const char* str,int len) {    //将长为len的str添加到Buffer的后面，如果空间不够，则移动Buffer的内容，或者给Buffer扩容
+    int freeSizeAfterWriteIndex =  AL_Buffer.size() - writeIndex;
+    int freeSizeBeforeReadIndex = readIndex;
+
+    if(freeSizeAfterWriteIndex <= len){
+        std::copy(str,str+len,AL_Buffer.begin()+writeIndex);
+        writeIndex += len;
+        return;
+    }
+    else{
+        std::copy(AL_Buffer.begin()+readIndex,AL_Buffer.begin()+writeIndex,AL_Buffer.begin()); //先把所有的数据移动到Buffer的头部
+        readIndex = 0;
+        writeIndex = writeIndex-readIndex;
+
+        if(freeSizeAfterWriteIndex + freeSizeBeforeReadIndex <= len){  //Buffer的空间能放下，直接加到后面
+            std::copy(str,str+len,AL_Buffer.begin()+writeIndex);
+            writeIndex += len;
+            return;
+        }
+
+        else{//Buffer的空间不够用，则扩容，然后将数据加到Buffer后面
+            AL_Buffer.resize(writeIndex-readIndex+len);
+            std::copy(str,str+len,AL_Buffer.begin()+writeIndex);
+            return ;
+        }
+    }
+}
+
+void Buffer::updateBufferIndex(int len) {
+    readIndex += len;
+    if(writeIndex == readIndex){        //Buffer中没有数据了
+        readIndex = 0;
+        writeIndex = 0;
+    }
+}
+

@@ -27,8 +27,12 @@ public:
     int handleEvents();
 
     void addReadToEvents();             //更新自己对应的描述符的关心事件，并更新Epoller的关心事件
+    void addWriteToEvents();
     void updateEvents();                //只处理添加和更新
-    void removeEvents();                //处理事件删除
+
+    void removeEvents();                //将描述符从Epoll中删除
+    void removeWriteEvents();           //只删除描述符的写事件
+
 
     int get_fd(){
         return fd;
@@ -37,6 +41,9 @@ public:
         return fd_events;
     }
     void setChannelReadCallback(ChannelCallback _callback){
+        readCallback = _callback;
+    }
+    void setChannelWriteCallback(ChannelCallback _callback){
         readCallback = _callback;
     }
     void set_fd_revents(u_int32_t fd_revents_){
