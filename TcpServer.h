@@ -35,9 +35,7 @@ public:
         TcpServerReadCallback = callback_;
     }
 
-    void tmp(int connfd){
-        std::cout<<"count tmp : "<<ConnectionMap[connfd].use_count()<<std::endl;
-    }
+
 private:
     EventLoop* loop;
     std::unique_ptr<Acceptor> Acceptor_;             //加后缀下划线表明是智能指针

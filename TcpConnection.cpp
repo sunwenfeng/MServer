@@ -38,7 +38,9 @@ void TcpConnection::handleRead() {//描述符可读，需要读数据然后处�
     else if(ret > 0){
         std::cout<<"read data "<<ret<<std::endl;
         InputBuffer.printData(ret);
-        TcpConnectionReadCalback();   //业务逻辑处理
+        //TcpConnectionReadCalback();   //业务逻辑处理
+        std::string msg(InputBuffer.retriveAlldata());
+        send(msg);
     }
     else{
         std::cout<<"read error : ";

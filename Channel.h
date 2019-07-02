@@ -44,7 +44,7 @@ public:
         readCallback = _callback;
     }
     void setChannelWriteCallback(ChannelCallback _callback){
-        readCallback = _callback;
+        writeCallback = _callback;
     }
     void set_fd_revents(u_int32_t fd_revents_){
         fd_revents = fd_revents_;
@@ -69,7 +69,6 @@ private:
     此外，channel负责EventLoop和TcpConnection/Acceptor的转接，所以更需要知道EventLoop的指针*/
 
     ChannelCallback readCallback;
-
     ChannelCallback writeCallback;
     ChannelCallback closeCallback;
     /* channel的回调函数，在Acceptor和TcpConnection中绑定不同的函数*/

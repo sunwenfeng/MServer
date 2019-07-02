@@ -17,12 +17,18 @@ public:
         std::cout<<"Buffer closed"<<std::endl;
     }
 
-    int readData(int fd,int &error);
+    int readData(int fd,int &error);     //从socket读数据然后写入Buffer
     void printData(int len);
 
     void append(const char*,int len);   //将长度为len的char加入到Buffer的后面
 
     void updateBufferIndex(int len);    //write了Buffer中的len长度之后，更新Buffer的readIndex和writeIndex
+
+    std::string retriveAlldata(){
+        std::string result(dataBegin(),dataSize());
+        updateBufferIndex(dataSize());
+        return result;
+    }
 
     int dataSize(){
         return writeIndex-readIndex;

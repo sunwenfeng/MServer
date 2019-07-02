@@ -33,6 +33,9 @@ public:
     void setTcpConnectionCloseCalback(TcpCloseConnCalback callback){
         TcpConnectionCloseCalback = callback;
     }
+    int get_fd(){
+        return tcpConnectionChannel_->get_fd();
+    }
 
 private:
     std::unique_ptr<Socket> connectfd_;
@@ -42,10 +45,10 @@ private:
     Buffer OutputBuffer;
 
     TcpConnectionCalback TcpConnectionReadCalback;     //业务逻辑处理
-    TcpCloseConnCalback TcpConnectionCloseCalback;    //关闭连接，通知TcpServer从map中删掉本TcpConnection
+    TcpCloseConnCalback TcpConnectionCloseCalback;     //关闭连接，通知TcpServer从map中删掉本TcpConnection
 
 };
 
-typedef std::shared_ptr<TcpConnection> TcpConnetionPtr;
+ typedef std::shared_ptr<TcpConnection> TcpConnetionPtr;
 
 #endif //MSERVER_TCPCONNECTION_H
